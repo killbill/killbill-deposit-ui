@@ -55,6 +55,6 @@ If you want to override the assets you can add it to ```app/assets/stylesheet/de
 For integrate run with [killbill-admin-ui-standalone](https://github.com/killbill/killbill-admin-ui-standalone), please update the Gemfile to use Deposit locally
 
 ```
-# gem 'killbill-deposit-ui'
-gem 'killbill-deposit-ui', :path => '../killbill-deposit-ui'
+# gem 'killbill-deposit'
+gem 'killbill-deposit', :path => '../killbill-deposit-ui'
 ```
