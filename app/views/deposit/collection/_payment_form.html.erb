@@ -15,8 +15,8 @@
   <div class="form-group">
     <%= label_tag :effective_date, 'Payment Date', :class => 'col-sm-2 control-label' %>
     <div class="col-sm-2">
-      <%= text_field_tag :effective_date, Date.parse(Time.now.to_s).to_s, :class => 'form-control date-picker', :required => true %>
-    </div>
+      <%= text_field_tag :effective_date, Date.parse(Time.now.to_s).to_s, :class => 'form-control date-picker', :required => true, :data =>{:provide => 'datepicker', 'date-format': "yyyy-mm-dd"} %>
+      </div>
   </div>
   <div class="form-group">
     <%= label_tag :payment_reference_number, 'Payment Ref. #', :class => 'col-sm-2 control-label' %>
