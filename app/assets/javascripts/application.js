@@ -11,3 +11,4 @@
 // about supported directives.
 //
 //= require deposit/deposit
+//= require assets/common

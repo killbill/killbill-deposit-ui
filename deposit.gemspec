@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   s.metadata['rubygems_mfa_required'] = 'true'
 
+  s.add_dependency 'killbill-assets-ui'
   s.add_dependency 'killbill-client'
   s.add_dependency 'money-rails', '~> 1.9'
   s.add_dependency 'rails', '~> 7.0'
