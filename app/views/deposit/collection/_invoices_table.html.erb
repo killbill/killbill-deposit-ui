@@ -44,7 +44,7 @@ $(document).ready(function() {
         }
       ],
     createdRow: function(row, data, dataIndex) {
-      $('td', row).eq(4).html('<input class="payment_amount_invoice" type="number" name="payment_amount_' + data[0] + '" id="payment_amount_' + dataIndex + '" step="any" class="form-control">')
+      $('td', row).eq(4).html('<input class="payment_amount_invoice" type="number" name="payment_amount_' + data[0] + '" id="payment_amount_' + dataIndex + '" step="any" class="form-control" value="0">')
     },
     drawCallback: function() {
       $('input').change(function() {
