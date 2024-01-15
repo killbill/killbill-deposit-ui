@@ -9,7 +9,7 @@
 
 require 'money-rails'
 require 'killbill_client'
-require 'killbill-assets-ui'
+require 'killbill_assets_ui'
 
 module Deposit
   class Engine < ::Rails::Engine
