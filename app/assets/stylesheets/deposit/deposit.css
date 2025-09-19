@@ -11,6 +11,14 @@
 
 #deposit_amount_mismatch {
     text-align: right;
-    padding-top: 15px;
     visibility: hidden;
+}
+
+.invoice-table-input {
+    border-radius: 8px !important;
+    height: 38px !important;
+}
+
+#invoices-table_wrapper {
+    margin-bottom: 0px;
 }
