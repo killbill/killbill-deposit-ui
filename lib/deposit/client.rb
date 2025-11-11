@@ -8,7 +8,7 @@ module Killbill
       class << self
         def record_payments(account_id, effective_date, payment_reference_number, deposit_type, invoice_payments, user = nil, reason = nil, comment = nil, options = {})
           payments = []
-          invoice_payments.each do |invoice_number, payment_amount|
+          invoice_payments.map do |invoice_number, payment_amount|
             payments << { invoiceNumber: invoice_number, paymentAmount: payment_amount }
           end
 
