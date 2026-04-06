@@ -126,7 +126,7 @@ module Deposit
       pages.each { |page| json[:data] << formatter.call(page) }
 
       respond_to do |format|
-        format.json { render json: json }
+        format.json { render json: }
       end
     end
 

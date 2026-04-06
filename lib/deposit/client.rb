@@ -17,7 +17,7 @@ module Killbill
             effectiveDate: effective_date,
             paymentReferenceNumber: payment_reference_number,
             depositType: deposit_type,
-            payments: payments
+            payments:
           }.to_json
 
           path = "#{KILLBILL_DEPOSIT_PREFIX}/record"
@@ -25,9 +25,9 @@ module Killbill
                                               body,
                                               {},
                                               {
-                                                user: user,
-                                                reason: reason,
-                                                comment: comment
+                                                user:,
+                                                reason:,
+                                                comment:
                                               }.merge(options)
           response.body
         end
