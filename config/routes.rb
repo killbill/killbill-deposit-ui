@@ -6,7 +6,7 @@ Deposit::Engine.routes.draw do
   resources :collection, only: [:index]
 
   scope '/collection' do
-    match '/record' => 'collection#record_payments', :via => :post, :as => 'do_record_payments'
-    match '/account_invoices' => 'collection#account_invoices', :via => :get, :as => 'account_invoices'
+    post '/record' => 'collection#record_payments', :as => 'do_record_payments'
+    get '/account_invoices' => 'collection#account_invoices', :as => 'account_invoices'
   end
 end
