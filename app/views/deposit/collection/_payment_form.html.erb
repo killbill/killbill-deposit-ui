@@ -8,7 +8,7 @@
   <div class="form-group d-flex pb-3">
     <%= label_tag :payment_amount, 'Amount Received', :class => 'col-sm-3 control-label' %>
     <div class="col-sm-9">
-      <%= number_field_tag :payment_amount, nil, :step => :any, :id => 'payment_amount', :class => 'form-control', :required => true %>
+      <%= number_field_tag :payment_amount, 0, :step => :any, :id => 'payment_amount', :class => 'form-control', :required => true %>
       <p class="help-block mb-0">Currency: <%= @currency %></p>
     </div>
   </div>
